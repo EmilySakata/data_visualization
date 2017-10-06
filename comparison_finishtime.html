@@ -1,1 +1,85 @@
-visualization- comparison_finishtime
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>overall_finishtime</title>
+  <!-- List of bootstrap and style css sheets -->
+  <!-- using the bootstrapcdn https://getbootstrap.com. -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+  <!-- reset style sheet -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+<!-- 
+  landing page style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!--   jquery file -->
+  <script type="text/javascript" src = "jquery-3.2.1.js"></script>
+
+<!--   bootscrap javascript file -->
+ <script type="text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+ <header>
+   
+    <nav class=" navbar  justify-content-end navbar-light navbar-expand{-sm|-md|-lg|-xl}" >
+
+     <h1 id = "nav-head" href="index.html">Strava project</h1>
+      <a class="btn btn-primary" id = "nav-button" href="comparison.html" role="button">Comparison</a>
+      <a class="btn btn-primary" id = "nav-button" href="data.html" role="button">Data</a>
+      
+      <div class="btn-group " id = "nav-button">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plot
+        </button>
+
+      <div class="dropdown-menu" id = "nav-button ">
+          <a class="dropdown-item"  href="#">Strava vs race </a><br>
+          <a class="dropdown-item"  href="#">Top20 runners </a><br>     
+          <a class="dropdown-item"  href="#">Overall race time</a> <br>
+          <a class="dropdown-item"  href="#">Average time</a>
+        </div>
+      </div>
+      
+    </nav>
+
+  </header>
+
+
+
+<main class="container">
+        <br>
+        <h2 >Finish time of strava runners vs overall race result</h2>
+        <br>
+          </main>
+	<div class="container">
+		
+     	<div class="media">
+  			<img class="d-flex align-self-center mr-3" src="images/strava vs race.png" alt="overall runner race result vs Strava users">
+  
+      	</div>
+      </div>
+		<div class="row">
+      		<div class="col-sm-12">
+			<p>
+			Race results for SF marathon has normal distribution curb.
+			Strava users runs faster than average marathon population but Strava users has higher spread in Finish time compare to average marathon population.
+			<br>
+			<ul>
+			<li>SF race mean : ‘04:45:37’</li>
+			<li>SF race standard deviation : ‘00:52:41’</li>
+			<li>Strava mean: ‘04:26:09’</li>
+			<li>Strava standard deviation : ‘00:54:26’</li>
+			</ul>
+
+	       </p>
+      		</div>
+      	</div>
+      </div>
+
+  
+
+
+</body>
+
+</html>
