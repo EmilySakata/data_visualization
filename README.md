@@ -7,10 +7,7 @@ The objective of this project is to present the data plots and analysis done for
 3) The plot/visualization itself for the selected comparison.
 4) A "Data" page” 
 
-In order to view the html in the local file, please clone this repository onto your local computer. 
-Following terminal command should allow users to clone the file. (require ssh authentication setting )
-
-git clone <ssh git repository directry>
+To view the published site, please visit https://emilysakata.github.io/
 
 -------------------------------------------------------------
 Contributors:
