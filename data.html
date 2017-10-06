@@ -2,17 +2,53 @@
 <html lang="en">
 <head>
   <title>Data for strava users 2017 San Francisco Marathon</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<!-- List of bootstrap and style css sheets -->
+  <!-- using the bootstrapcdn https://getbootstrap.com. -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+  <!-- reset style sheet -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+<!-- 
+  landing page style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!--   jquery file -->
+  <script type="text/javascript" src = "jquery-3.2.1.js"></script>
+
+<!--   bootscrap javascript file -->
+ <script type="text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
+ <header>
+   
+    <nav class=" navbar  justify-content-end navbar-light navbar-expand{-sm|-md|-lg|-xl}" >
+
+     <h1 id = "nav-head" href="index.html">Strava project</h1>
+      <a class="btn btn-primary" id = "nav-button" href="comparison.html" role="button">Comparison</a>
+      <a class="btn btn-primary" id = "nav-button" href="data.html" role="button">Data</a>
+      
+      <div class="btn-group " id = "nav-button">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plot
+        </button>
+
+      <div class="dropdown-menu" id = "nav-button ">
+          <a class="dropdown-item"  href="#">Strava vs race </a><br>
+          <a class="dropdown-item"  href="#">Top20 runners </a><br>     
+          <a class="dropdown-item"  href="#">Overall race time</a> <br>
+          <a class="dropdown-item"  href="#">Average time</a>
+        </div>
+      </div>
+      
+    </nav>
+
+  </header>
 <body>
 
 <div class="container">
-  <h2>2017 San Francisco Marathon Strava user results </h2>
-  <p>Captured total of 1317 user data using data scraping technique to perform data gathering:</p>            
+  <h1 id= "sub_header">2017 San Francisco Marathon Strava user results </h1>
+  <br>
+  <p>Total of 1317 user data was captured using data scraping technique to perform data gathering. this inforamtion was used to plot and diagram information to visualize the data to have an insightful analysis of the Strava users compared to the 2017  San Francisco Marathon official results. </p>            
+  <br>
   <table class="table table-striped">
     <thead>
       <tr>
