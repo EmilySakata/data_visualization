@@ -5,15 +5,46 @@
 
   <meta charset="UTF-8">
   <title>Data visualization comparison</title>
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <style type="text/css">
-    div {
-      border: 5px  white solid;
-    }
-  </style>
-</head>
+  <!-- List of bootstrap and style css sheets -->
+  <!-- using the bootstrapcdn https://getbootstrap.com. -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 
+  <!-- reset style sheet -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+<!-- 
+  landing page style sheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!--   jquery file -->
+  <script type="text/javascript" src = "jquery-3.2.1.js"></script>
+
+<!--   bootscrap javascript file -->
+ <script type="text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+ <header>
+   
+    <nav class=" navbar  justify-content-end navbar-light navbar-expand{-sm|-md|-lg|-xl}" >
+
+     <h1 id = "nav-head" href="index.html">Strava project</h1>
+      <a class="btn btn-primary" id = "nav-button" href="comparison.html" role="button">Comparison</a>
+      <a class="btn btn-primary" id = "nav-button" href="data.html" role="button">Data</a>
+      
+      <div class="btn-group " id = "nav-button">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plot
+        </button>
+
+      <div class="dropdown-menu" id = "nav-button ">
+          <a class="dropdown-item"  href="#">Strava vs race </a><br>
+          <a class="dropdown-item"  href="#">Top20 runners </a><br>     
+          <a class="dropdown-item"  href="#">Overall race time</a> <br>
+          <a class="dropdown-item"  href="#">Average time</a>
+        </div>
+      </div>
+      
+    </nav>
+
+  </header>
+<body>
 <body>
   <!-- Creates the Overall Grid -->
   <div class="container">
@@ -23,26 +54,28 @@
       <div class="col-sm-12">
         <h1>Comparison</h1>
         <br>
+        <h4> below visualization graphs are used to perform comparison to obtain meaningful insight and analysis of runners from the 2017 San Francisco Marathon. The data from official race results were compared with data from Strava users to understand the demographics of Strava users compared to the overall runners, distribution of the Strava users final results, and the average pace analysis of the top10 runners. 
         <br>
         <h4>Click any plot to get an in-depth analysis </h4>
+        <br>
       </div>
     </div>
 
     <!-- Row 4 -->
     <div class="row">
       <div class="col-sm-6">
-            <a href="https://www.w3schools.com"> <img id="bio-image" src="file:///Users/milliemillie/Documents/Bootcamp/homework6/Homeworkfile/images/SF_agevstime.png" alt="Image" >
+            <a href="age_vs_finishtime_race.html"> <img id="bio-image" src="images/SF_agevstime.png" alt="Image" >
 </a>
       </div>
       <div class="col-sm-6">
-                <a href="https://www.w3schools.com"> <img id="bio-image" src="file:///Users/milliemillie/Documents/Bootcamp/homework6/Homeworkfile/images/Strava_agevstime.png" alt="Image"></a>
+                <a href="age_vs_finishtime_strava.html"> <img id="bio-image" src="images/Strava_agevstime.png" alt="Image"></a>
       </div>
        <div class="row">
       <div class="col-sm-6">
-                <a href="https://www.w3schools.com"><img id="bio-image" src="file:///Users/milliemillie/Documents/Bootcamp/homework6/Homeworkfile/images/strava vs race.png" alt="Image"></a>
+                <a href="comparison_finishtime.html"><img id="bio-image" src="images/strava vs race.png" alt="Image"></a>
       </div>
       <div class="col-sm-6">
-              <a href="https://www.w3schools.com"><img id="bio-image" src="file:///Users/milliemillie/Documents/Bootcamp/homework6/Homeworkfile/images/Top20runner.png" alt="Image"></a>
+              <a href="top10runner.html"><img id="bio-image" src="images/Top20runner.png" alt="Image"></a>
       </div>
     </div>
   </div>
